@@ -1,105 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- тег с ключевыми словами -->
-    <meta keywords="криптовалюта" />
-    <!-- иконка страницы -->
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="img/cash_corner_logo.svg"
-    />
-    <!-- подключение стилей -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- подключение скриптов javascript -->
-    <script defer src="js/main.js"></script>
-    <title>CashCorner</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="header">
-        <img class="header_logo" src="img/cash_corner_logo.svg" />
-        <div class="header_menu">
-          <button class="header_menu_button">
-            <p style="display: inline">Обмен</p>
-          </button>
-          <div class="between_header_buttons"></div>
-          <button class="header_menu_button">
-            <p style="display: inline">Отзывы</p>
-          </button>
-          <div class="between_header_buttons"></div>
-          <button class="header_menu_button">
-            <p style="display: inline">FAQ</p>
-          </button>
-          <div class="between_header_buttons"></div>
-          <button class="header_menu_button">
-            <p style="display: inline">Контакты</p>
-          </button>
-        </div>
-        <!-- <div class="telegram_header">
-            <button class="header_telegram_button">Наш Телеграм-Бот</button>
-            <img src="img/telegram_icon.png" alt="Telegram Bot" style="height: 80%; margin: auto 0;">
-            </div> -->
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <!-- тег с ключевыми словами -->
+  <meta keywords="криптовалюта" />
+  <!-- иконка страницы -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/cash_corner_logo.svg" />
+  <!-- подключение стилей -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- подключение скриптов javascript -->
+  <script defer src="js/course_of_bitcoin.js"></script>
+  <script defer src="js/calculator.js"></script>
+  <script defer src="js/courses_of_cript.js"></script>
+  <script defer src="js/time_for_api.js"></script>
 
-      <div class="trade_cript">
-        <div class="trade_cript_security">
-          <img
-            style="height: 80%; display: inline-block"
-            src="img/sec.png"
-            alt=""
-          />
-          <p style="display: inline-block; margin: 0px; font-size: 20px">
-            Надёжный и безопасный обмен криптовалют
-          </p>
-        </div>
-        <div style="display: flex">
-          <p
-            style="
-              display: inline-block;
-              max-width: 70%;
-              text-shadow: 4px 4px 15px rgba(82, 82, 82, 0.508);
-            "
-          >
-            Главная задача которую мы ставим перед собой — быстрые, анонимные и
-            удобные обмены для наших клиентов 24/7. Гарантируем
-            конфиденциальность и безопасность транзакций. Попробуйте наш сервис
-            и ощутите все преимущества прямо сейчас!
-          </p>
-          <div class="course_of_trade">
-            <p id="bitcoin-rate" style="display: inline-block; margin: auto">
-              Курс обмена: 1 BTC =
-            </p>
-          </div>
-        </div>
-        <div class="trade_cript_trade">
-          <div class="trade_cript_gave">
-            <p style="color: rgba(25, 25, 25, 0.878); margin: 10px">Отдаёте</p>
-            <div class="input_setup">
-              <input id="input_sum" type="number" />
-              <label class="label_input_sum">Сумма</label>
-            </div>
-            <div class="input_setup">
-              <select id="input_valut">
-                <option value="bitcoin" selected="none" style="color: black">
-                  Bitcoin
-                </option>
-                <option value="altcoin" selected="none" style="color: black">
-                  Altcoin
-                </option>
-              </select>
-              <label class="label_input_valut">Валюта</label>
-            </div>
-          </div>
-          <div class="trade_cript_get">
-            <p style="color: rgba(25, 25, 25, 0.878); margin: 15px">
-              Получаете
-            </p>
-          </div>
-        </div>
+  <title>CashCorner</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <img class="header_logo" src="img/cash_corner_logo.svg" />
+      <div class="header_menu">
+        <button class="header_menu_button">
+          <p style="display: inline">Обмен</p>
+        </button>
+        <div class="between_header_buttons"></div>
+        <button class="header_menu_button">
+          <p style="display: inline">Отзывы</p>
+        </button>
+        <div class="between_header_buttons"></div>
+        <button class="header_menu_button">
+          <p style="display: inline">FAQ</p>
+        </button>
+        <div class="between_header_buttons"></div>
+        <button class="header_menu_button">
+          <p style="display: inline">Контакты</p>
+        </button>
       </div>
     </div>
-  </body>
+
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+
+    <!-- блок с иконкой и сообщением о безопасности -->
+    <div class="trade_cript">
+      <div class="trade_cript_security">
+        <img style="height: 80%; display: inline-block" src="img/sec.png" alt="" />
+        <p style="display: inline-block; margin: 0px; font-size: 20px">
+          Надёжный и безопасный обмен криптовалют
+        </p>
+      </div>
+
+      <!-- блок с параграфом -->
+      <div style="display: flex">
+        <p style="display: inline-block; max-width: 70%; text-shadow: 4px 4px 15px rgba(82, 82, 82, 0.508);">
+          Главная задача которую мы ставим перед собой — быстрые, анонимные и
+          удобные обмены для наших клиентов 24/7. Гарантируем
+          конфиденциальность и безопасность транзакций. Попробуйте наш сервис
+          и ощутите все преимущества прямо сейчас!
+        </p>
+        <div class="course_of_trade">
+          <p id="bitcoin-rate" style="display: inline-block; margin: auto">
+            Подожите...
+          </p>
+        </div>
+      </div>
+
+    <!-- .............................................. -->
+    <!-- ..................обмен.валют................. -->
+    <!-- .............................................. -->
+      <div class="trade_cript_trade">
+        <div class="trade_cript_gave">
+          <p style="color: rgba(25, 25, 25, 0.878); margin: 15px">Отдаёте</p>
+          <div class="input_setup">
+            <input id="input_sum" name="sum_for_trade" type="number" placeholder="Сумма" value="">
+          </div>
+          <div class="input_setup">
+            <select id="input_valut" placeholder="Валюта">
+              <option value="altcoin" selected="none" style="color: black; border-radius: 10px;">
+                Altcoin
+              </option>
+              <option value="bitcoin" selected="none" style="color: black; border-radius: 10px;">
+                Bitcoin
+              </option>
+            </select>
+          </div>
+          <div class="input_setup">
+            <input id="contact_for" name="contact" type="number" placeholder="Контакт для связи">
+          </div>
+        </div>
+        <!-- .............................................. -->
+        <!-- .........................блок.получения....... -->
+        <!-- .............................................. -->
+        <div class="trade_cript_get">
+          <p style="color: rgba(25, 25, 25, 0.878); margin: 15px">
+            Получаете
+          </p>
+          <div class="input_setup">
+            <input id="input_get_sum" name="sum_for_trade" type="number" placeholder="Сумма">
+          </div>
+
+          <div class="input_setup">
+            <select id="input_get_valut" placeholder="Валюта">
+              <option value="altcoin" selected="none" style="color: black; border-radius: 10px;">
+                Altcoin
+              </option>
+              <option value="bitcoin" selected="none" style="color: black; border-radius: 10px;">
+                Bitcoin
+              </option>
+            </select>
+          </div>
+          <div class="input_setup">
+            <input id="num_of_card" name="contact" type="number" placeholder="Номер карты">
+          </div>
+        </div>
+      </div>
+      <button id="make_app" onclick="showk()">Создать заявку</button>
+    </div>
+
+
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+    <!-- .............................................. -->
+
+    <div id="basement">
+      <div id="basement_top">
+        <img class="header_logo" src="img/cash_corner_logo.svg"
+          style="height: 56px; margin: 10px 10px; margin-right: 100%;">
+        <a id="basement_link" href="cash_corner.ru">cash_corner.ru</a>
+        <a id="telegram_link" href=""></a>
+      </div>
+      <div id=basement_bottom>
+        <p id="cript_2024">© 2024<br>
+          Криптовалютный обменный пункт Cash Corner</p>
+      </div>
+    </div>
+    
+
+  </div>
+  </div>
+</body>
+
 </html>

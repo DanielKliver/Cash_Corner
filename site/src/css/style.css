@@ -1,27 +1,23 @@
+@media(max-width: 1200px) {}
 
-@media(max-width: 1200px)
-{
-    
-}
-
-@media(max-width: 1000px)
-{
-    body{
+@media(max-width: 1000px) {
+    body {
         margin: 0px 0px;
         background-color: rgba(94, 94, 94, 0.508);
         font-family: "Roboto", "Arial", sans-serif;
-        color:rgba(29, 29, 29, 0.904);
+        color: rgba(29, 29, 29, 0.904);
     }
-    
-    .container{
+
+    .container {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         width: 768px;
-        height: 1000px;
+        height: 100%;
+        margin-bottom: 0px;
     }
-    
-    .header{
+
+    .header {
         display: flex;
         padding: 10px;
         height: 70px;
@@ -30,13 +26,15 @@
         border-bottom-right-radius: 10px;
         background-color: rgba(255, 255, 255, 0.89);
         color: black;
+        box-shadow: 4px 4px 15px rgba(82, 82, 82, 0.508);
     }
 
-    .header_logo{
-        height: 80%; 
+    .header_logo {
+        height: 80%;
         margin: auto 0;
     }
-    .header_menu{
+
+    .header_menu {
         display: flex;
         justify-content: center;
         width: 348px;
@@ -46,21 +44,21 @@
         border-radius: 10px;
         box-shadow: 4px 4px 15px rgba(82, 82, 82, 0.508);
     }
-    
-    .header_menu_button{
+
+    .header_menu_button {
         margin-left: 8px;
         margin-right: 8px;
         border: 0px;
         background-color: transparent;
         transition: 0.3s;
-        
+
     }
 
-    .header_menu_button:hover{
+    .header_menu_button:hover {
         color: white;
     }
 
-    .between_header_buttons{
+    .between_header_buttons {
         width: 2px;
         height: 70%;
         margin: auto 0px;
@@ -71,48 +69,50 @@
         background-color: rgba(96, 96, 96, 0.249);
 
     }
-    
-    .header_menu_button:hover{
-        color:rgba(94, 94, 94, 0.508);
+
+    .header_menu_button:hover {
+        color: rgba(94, 94, 94, 0.508);
     }
-    
-    .header_telegram_button{
-        border:0px;
+
+    .header_telegram_button {
+        border: 0px;
         background-color: rgba(255, 255, 255, 0.89);
         text-decoration: underline;
     }
-    
-    .header_telegram_button:hover{
-        color:rgba(94, 94, 94, 0.508);
+
+    .header_telegram_button:hover {
+        color: rgba(94, 94, 94, 0.508);
     }
-    /* ========================================================== */
-    /* ========================================================== */
-    /* ========================================================== */
-    /* ========================================================== */
-    /* ========================================================== */
-    .trade_cript{
+
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+
+    .trade_cript {
         display: flex;
         margin: 20px 0px;
-        height: 500px;
+        height: 440px;
         max-width: 100%;
         background-color: rgba(255, 255, 255, 0.89);
         border-radius: 10px;
         padding: 10px;
         flex-direction: column;
-        
+        box-shadow: 4px 4px 15px rgba(82, 82, 82, 0.508);
+
     }
 
-    .trade_cript_security{
+    .trade_cript_security {
         display: flex;
         align-items: center;
         height: 10%;
     }
 
-    .course_of_trade{
+    .course_of_trade {
         display: flex;
         position: relative;
         margin-bottom: 20px;
-        top:50%;
+        top: 50%;
         height: 30%;
         width: 30%;
         border: 3px solid black;
@@ -120,11 +120,12 @@
         box-shadow: 4px 4px 15px rgba(82, 82, 82, 0.508);
     }
 
-    .trade_cript_trade{
+    .trade_cript_trade {
         display: flex;
-        align-content:center;
+        align-content: center;
     }
-    .trade_cript_gave{
+
+    .trade_cript_gave {
         height: 220px;
         width: 49%;
         display: inline-block;
@@ -133,7 +134,7 @@
         box-shadow: 4px 4px 15px rgba(82, 82, 82, 0.508);
     }
 
-    .trade_cript_get{
+    .trade_cript_get {
         height: 220px;
         width: 49%;
         margin-left: auto;
@@ -143,57 +144,145 @@
         box-shadow: 4px 4px 15px rgba(82, 82, 82, 0.508);
     }
 
-    .input_setup{
+    .input_setup {
         margin: 10px;
         position: relative;
-        
+
     }
-    .input_sum{
-        padding-left:5px;
-        height: 20px;
-        width: 130px;
+
+    /* Убираем стрелочки для Chrome, Safari, Edge, Opera */
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    #input_sum {
+        padding-left: 5px;
+        height: 30px;
+        width: 180px;
         border: none;
         border-radius: 10px;
         outline: none;
         display: inline-block;
-        
+
     }
 
-    .label_input_sum{
-        position: absolute;
-        bottom: 1px;
-        left: 5px;
-        z-index: 0;
-        color: rgba(0, 0, 0, 0.504);
-        transition: 0.3s linear;
-    }
-
-    .input_sum:focus ~ .label_input_sum{
-       color: transparent;
-    }
-
-    .input_valut{
-        padding-left:5px;
-        height: 22px;
-        width: 130px;
+    #input_get_sum{
+        padding-left: 5px;
+        height: 30px;
+        width: 180px;
         border: none;
         border-radius: 10px;
         outline: none;
         display: inline-block;
     }
 
-    .label_input_valut{
-        position: absolute;
-        bottom: 1px;
-        left: 5px;
-        z-index: 0;
-        color: rgba(0, 0, 0, 0.504);
-        transition: 0.3s linear;
+    #input_valut {
+        padding-left: 5px;
+        height: 32px;
+        width: 187px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        display: inline-block;
     }
 
+    #input_get_valut{
+        padding-left: 5px;
+        height: 32px;
+        width: 187px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        display: inline-block;
+    }
+
+    #contact_for{
+        padding-left: 5px;
+        height: 30px;
+        width: 180px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        display: inline-block;
+    }
+
+    #num_of_card{
+        padding-left: 5px;
+        height: 30px;
+        width: 180px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        display: inline-block;
+    }
+
+    #make_app {
+        display: flex;
+        margin: auto;
+        margin-top: 20px;
+        height: 38px;
+        width: 30%;
+        border: 3px solid black;
+        border-radius: 10px;
+        box-shadow: 4px 4px 15px rgba(82, 82, 82, 0.508);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    #make_app:hover {
+        color: rgba(94, 94, 94, 0.508);
+    }
+
+    #basement {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(94, 94, 94, 0.508);
+        margin-bottom: 0px;
+        height: 180px;
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        box-shadow: 4px 4px 15px rgba(82, 82, 82, 0.508);
+    }
+
+    #basement_top {
+        height: 106px;
+        width: 100%;
+    }
+
+    #basement_bottom {
+        width: 100%;
+        
+    }
+
+    #basement_link {
+        width: 100%;
+        margin: 10px;
+        color: rgb(53, 53, 53);
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    #basement_link:hover {
+        color: rgb(181, 181, 181);
+    }
+
+    #cript_2024 {
+        text-align: center;
+        margin: 0 auto;
+        top: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        color: rgb(54, 54, 54);
+    }
+
+
+
 }
 
-@media(max-width: 768px)
-{
-   
-}
+@media(max-width: 768px) {}
